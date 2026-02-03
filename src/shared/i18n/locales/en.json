@@ -1,0 +1,102 @@
+{
+  "common": {
+    "search": "Search...",
+    "notifications": "Notifications",
+    "logout": "Log out",
+    "adminUser": "Admin User",
+    "administrator": "Administrator",
+    "loading": "Loading...",
+    "errorLoading": "Error loading data"
+  },
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "zones": "Zones",
+    "plans": "Plans",
+    "contact": "Contact",
+    "users": "Users",
+    "settings": "Settings"
+  },
+  "pages": {
+    "dashboard": {
+      "title": "Dashboard",
+      "subtitle": "Dashboard content"
+    },
+    "zones": {
+      "title": "Zone Management",
+      "subtitle": "Manage coverage zones",
+      "createZone": "Create Zone",
+      "editZone": "Edit Zone",
+      "table": {
+        "name": "Name",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive"
+      },
+      "deleteZone": "Delete Zone",
+      "delete": "Delete",
+      "confirmDelete": "Are you sure you want to delete the zone \"{{name}}\"? This action cannot be undone.",
+      "form": {
+        "name": "Zone Name",
+        "description": "Description",
+        "latitude": "Latitude",
+        "longitude": "Longitude",
+        "phone": "Phone",
+        "email": "Email",
+        "address": "Address",
+        "freeInstallation": "Free installation",
+        "noCommitment": "No commitment",
+        "status": "Status",
+        "cancel": "Cancel",
+        "save": "Save",
+        "saving": "Saving...",
+        "creating": "Creating..."
+      }
+    },
+    "plans": {
+      "title": "Plan Management",
+      "subtitle": "Manage available internet plans",
+      "createPlan": "Create Plan",
+      "editPlan": "Edit Plan",
+      "table": {
+        "name": "Name",
+        "speed": "Speed",
+        "price": "Price",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive"
+      },
+      "noPlansAvailable": "No plans available",
+      "deletePlan": "Delete Plan",
+      "delete": "Delete",
+      "confirmDelete": "Are you sure you want to delete the plan \"{{name}}\"? This action cannot be undone.",
+      "form": {
+        "name": "Plan Name",
+        "price": "Price",
+        "speed": "Speed",
+        "speedUnit": "Unit",
+        "zone": "Zone",
+        "selectZone": "Select zone",
+        "benefits": "Benefits",
+        "addBenefit": "Add benefit",
+        "removeBenefit": "Remove benefit",
+        "benefitIcon": "Icon",
+        "benefitDescription": "Description",
+        "benefitDescriptionPlaceholder": "Benefit description",
+        "isRecommended": "Recommended plan",
+        "searchIcon": "Search icon...",
+        "noIconsFound": "No icons found",
+        "cancel": "Cancel",
+        "save": "Save",
+        "saving": "Saving...",
+        "creating": "Creating..."
+      }
+    }
+  }
+}
+

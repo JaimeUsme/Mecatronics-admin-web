@@ -1,0 +1,102 @@
+{
+  "common": {
+    "search": "Buscar...",
+    "notifications": "Notificaciones",
+    "logout": "Cerrar sesión",
+    "adminUser": "Admin Usuario",
+    "administrator": "Administrador",
+    "loading": "Cargando...",
+    "errorLoading": "Error al cargar los datos"
+  },
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "zones": "Zonas",
+    "plans": "Planes",
+    "contact": "Contacto",
+    "users": "Usuarios",
+    "settings": "Configuración"
+  },
+  "pages": {
+    "dashboard": {
+      "title": "Dashboard",
+      "subtitle": "Contenido del dashboard"
+    },
+    "zones": {
+      "title": "Gestión de Zonas",
+      "subtitle": "Administra las zonas de cobertura",
+      "createZone": "Crear Zona",
+      "editZone": "Editar Zona",
+      "table": {
+        "name": "Nombre",
+        "status": "Estado",
+        "actions": "Acciones"
+      },
+      "status": {
+        "active": "Activo",
+        "inactive": "Inactivo"
+      },
+      "deleteZone": "Eliminar Zona",
+      "delete": "Eliminar",
+      "confirmDelete": "¿Estás seguro de que deseas eliminar la zona \"{{name}}\"? Esta acción no se puede deshacer.",
+      "form": {
+        "name": "Nombre de la Zona",
+        "description": "Descripción",
+        "latitude": "Latitud",
+        "longitude": "Longitud",
+        "phone": "Teléfono",
+        "email": "Email",
+        "address": "Dirección",
+        "freeInstallation": "Instalación gratuita",
+        "noCommitment": "Sin compromiso",
+        "status": "Estado",
+        "cancel": "Cancelar",
+        "save": "Guardar",
+        "saving": "Guardando...",
+        "creating": "Creando..."
+      }
+    },
+    "plans": {
+      "title": "Gestión de Planes",
+      "subtitle": "Administra los planes de internet disponibles",
+      "createPlan": "Crear Plan",
+      "editPlan": "Editar Plan",
+      "table": {
+        "name": "Nombre",
+        "speed": "Velocidad",
+        "price": "Precio",
+        "status": "Estado",
+        "actions": "Acciones"
+      },
+      "status": {
+        "active": "Activo",
+        "inactive": "Inactivo"
+      },
+      "noPlansAvailable": "No hay planes disponibles",
+      "deletePlan": "Eliminar Plan",
+      "delete": "Eliminar",
+      "confirmDelete": "¿Estás seguro de que deseas eliminar el plan \"{{name}}\"? Esta acción no se puede deshacer.",
+      "form": {
+        "name": "Nombre del Plan",
+        "price": "Precio",
+        "speed": "Velocidad",
+        "speedUnit": "Unidad",
+        "zone": "Zona",
+        "selectZone": "Seleccionar zona",
+        "benefits": "Beneficios",
+        "addBenefit": "Agregar beneficio",
+        "removeBenefit": "Eliminar beneficio",
+        "benefitIcon": "Icono",
+        "benefitDescription": "Descripción",
+        "benefitDescriptionPlaceholder": "Descripción del beneficio",
+        "isRecommended": "Plan recomendado",
+        "searchIcon": "Buscar icono...",
+        "noIconsFound": "No se encontraron iconos",
+        "cancel": "Cancelar",
+        "save": "Guardar",
+        "saving": "Guardando...",
+        "creating": "Creando..."
+      }
+    }
+  }
+}
+
