@@ -206,7 +206,7 @@ export function PlansPage() {
                       </div>
                     </td>
                     <td className="px-3 sm:px-6 py-4 whitespace-nowrap">
-                      <PlanStatusBadge active={plan.isRecommended === 1} />
+                      <PlanStatusBadge active={plan.isActive} />
                     </td>
                     <td className="px-3 sm:px-6 py-4 whitespace-nowrap">
                       <div className="flex items-center gap-2">

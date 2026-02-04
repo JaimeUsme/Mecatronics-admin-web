@@ -38,6 +38,7 @@ export function EditPlanModal({ isOpen, onClose, plan }: PlanModalProps) {
       speed: 0,
       speedUnit: 'Mbps',
       benefits: [{ icon: 'gift', description: '' }],
+      isActive: true,
       isRecommended: false,
       zoneId: '',
     },
@@ -56,6 +57,7 @@ export function EditPlanModal({ isOpen, onClose, plan }: PlanModalProps) {
         speed: data.speed,
         speedUnit: data.speedUnit,
         benefits: data.benefits,
+        isActive: data.isActive,
         isRecommended: data.isRecommended,
         zoneId: data.zoneId,
       }
@@ -87,7 +89,8 @@ export function EditPlanModal({ isOpen, onClose, plan }: PlanModalProps) {
           speed: plan.speed,
           speedUnit: plan.speedUnit as 'Mbps' | 'Gbps',
           benefits: plan.benefits.length > 0 ? plan.benefits : [{ icon: 'gift', description: '' }],
-          isRecommended: plan.isRecommended === 1,
+          isActive: plan.isActive,
+          isRecommended: plan.isRecommended,
           zoneId: plan.zoneId,
         })
       } else {
@@ -98,6 +101,7 @@ export function EditPlanModal({ isOpen, onClose, plan }: PlanModalProps) {
           speed: 0,
           speedUnit: 'Mbps',
           benefits: [{ icon: 'gift', description: '' }],
+          isActive: true,
           isRecommended: false,
           zoneId: zonesData?.zones?.[0]?.id || '',
         })
@@ -446,17 +450,30 @@ export function EditPlanModal({ isOpen, onClose, plan }: PlanModalProps) {
           )}
         </div>
 
-        {/* Recomendado */}
-        <div className="flex items-center gap-2">
-          <input
-            {...register('isRecommended')}
-            type="checkbox"
-            id="isRecommended"
-            className="w-4 h-4 rounded border-input"
-          />
-          <label htmlFor="isRecommended" className="text-sm text-foreground">
-            {t('pages.plans.form.isRecommended')}
-          </label>
+        {/* Estado y Recomendado */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="flex items-center gap-2">
+            <input
+              {...register('isActive')}
+              type="checkbox"
+              id="isActive"
+              className="w-4 h-4 rounded border-input"
+            />
+            <label htmlFor="isActive" className="text-sm text-foreground">
+              {t('pages.plans.form.isActive')}
+            </label>
+          </div>
+          <div className="flex items-center gap-2">
+            <input
+              {...register('isRecommended')}
+              type="checkbox"
+              id="isRecommended"
+              className="w-4 h-4 rounded border-input"
+            />
+            <label htmlFor="isRecommended" className="text-sm text-foreground">
+              {t('pages.plans.form.isRecommended')}
+            </label>
+          </div>
         </div>
 
         {/* Botones */}

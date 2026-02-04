@@ -11,6 +11,7 @@ export const planSchema = z.object({
   speed: z.number().min(0, 'La velocidad debe ser mayor o igual a 0'),
   speedUnit: z.enum(['Mbps', 'Gbps']),
   benefits: z.array(planBenefitSchema).min(1, 'Debe tener al menos un beneficio'),
+  isActive: z.boolean(),
   isRecommended: z.boolean(),
   zoneId: z.string().min(1, 'La zona es requerida'),
 })

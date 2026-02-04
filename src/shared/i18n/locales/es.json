@@ -88,6 +88,7 @@
         "benefitIcon": "Icono",
         "benefitDescription": "Descripción",
         "benefitDescriptionPlaceholder": "Descripción del beneficio",
+        "isActive": "Plan activo",
         "isRecommended": "Plan recomendado",
         "searchIcon": "Buscar icono...",
         "noIconsFound": "No se encontraron iconos",

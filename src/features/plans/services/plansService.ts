@@ -17,6 +17,7 @@ export const plansService = {
     speed: number
     speedUnit: 'Mbps' | 'Gbps'
     benefits: Array<{ icon: string; description: string }>
+    isActive: boolean
     isRecommended: boolean
     zoneId: string
   }): Promise<Plan> => {

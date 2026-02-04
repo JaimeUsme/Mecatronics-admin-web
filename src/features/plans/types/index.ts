@@ -10,7 +10,8 @@ export interface Plan {
   speed: number
   speedUnit: string
   benefits: PlanBenefit[]
-  isRecommended: number
+  isActive: boolean
+  isRecommended: boolean
   zoneId: string
   createdAt: string
   updatedAt: string
